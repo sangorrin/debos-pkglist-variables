@@ -15,7 +15,7 @@ actions:
 
   - action: recipe
     description: "adding packages using a sequence isn't"
-    recipe: add-packages.yaml
+    recipe: add-packages-sequence.yaml
     variables:
       packagelist:
         - wget
