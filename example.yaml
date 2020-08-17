@@ -20,6 +20,12 @@ actions:
       packagelist:
         - wget
 
+  - action: recipe
+    description: "adding packages using array"
+    recipe: add-packages-sequence.yaml
+    variables:
+      packagelist: [sudo, vim-tiny]
+
   - action: pack
     file: result.tar.gz
     compression: gz
