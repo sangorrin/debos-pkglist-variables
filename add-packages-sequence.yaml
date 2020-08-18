@@ -1,8 +1,0 @@
-{{- $packagelist := or .packagelist "" }}
-
-architecture: amd64
-
-actions:
-  - action: apt
-    description: "install packages"
-    packages: {{ $packagelist }}
